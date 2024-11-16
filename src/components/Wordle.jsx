@@ -10,9 +10,12 @@ function Wordle() {
   const [letterMap, setLetterMap] = useState(new Map());
   const [gameOver, setGameOver] = useState("play");
   console.log(randomWord);
-  useEffect(() => {
+  function getRandomNum() {
     const randN = Math.floor(Math.random() * WORDS.length);
     setRandomWord(WORDS[randN]);
+  }
+  useEffect(() => {
+    getRandomNum();
   }, []);
   function checkCorrectKey(keyVal) {
     const keyValIn = currentAttempt.length;
@@ -118,6 +121,7 @@ function Wordle() {
               setAllAttempts([]);
               setLetterMap(new Map());
               setGameOver("play");
+              getRandomNum();
             }}
           >
             Restart
