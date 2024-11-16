@@ -1,0 +1,25 @@
+/* .game-over {
+  height: 50vh;
+  border: 2px solid black;
+  border-radius: 25px;
+} */
+
+.word-row-parent {
+  /* display: flex;
+  flex-direction: column; */
+  margin-bottom: 20px;
+}
+.word-row {
+  display: flex;
+  justify-content: center;
+}
+.atm-letter {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
