@@ -81,6 +81,7 @@ function Wordle() {
     <div>
       {gameOver === "play" && (
         <>
+          <div>Wordle- Guess the word</div>
           <div className="word-row-parent">
             {Array(6)
               .fill(0)
